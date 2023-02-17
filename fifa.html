@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+        <body>
+            <script>
+               
+    var jsonobject = {
+    "FIFA" : [
+        {
+            "countryName" : "Brazil",
+            "BestPlayer" : "ABC"
+        },
+        {
+            "coutryName" : "Portugal",
+            "BestPlayer" : "DEF"
+        },
+        {
+            "countryName" : "Russia",
+            "BestPlayer" : "GHI"
+        },
+        {
+            "countryName" : "German",
+            "BestPlayer" : "JKL"
+        }
+    ]
+    }
+    // document.write(jsonobject.FIFA[0].countryName + "<br>");
+    // document.write(jsonobject.FIFA[3].BestPlayer);
+
+    for(x in jsonobject.FIFA){
+        //document.write(x); // getting index number
+        for(inner_x in jsonobject[x]){
+            document.write(jsonobject[x][1])
+        }
+
+    }
+    
+       </script>
+        </body>
+</html>

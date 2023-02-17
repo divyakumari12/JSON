@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+        <body>
+            <script>
+               
+    var jsonobject = {
+    "name":"Divya",
+    "lastname": "Sharma",
+    "University": "Lovely Professional University",
+    "RegNO" : "12013033"
+}
+
+//modify value
+jsonobject.name = "Gautam";
+
+//add new key-value pair
+jsonobject.CGPA = "7.96";
+
+//delete key-value pair
+delete jsonobject.CGPA;
+
+for(showalldata in jsonobject){
+    document.write(jsonobject[showalldata] + "<br>");
+}
+
+
+
+
+                </script>
+        </body>
+</html>
